@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
+}
+
+body{
+  height: 1000px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid black;
+  padding-bottom:  10px;
+}
+
+.imglogo{
+  border-style: double;
+  background-color: #f1f1f1;
+}
+
+.box2{
+  display: flex;
+}
+
+.box2 a{
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.login{
+  margin-right: 5px;
+}
+
+.login:hover{
+  text-decoration: underline;
+}
+.login:active{
+  color: black;
+}
+
+.sign{
+  background-color: #36317E;
+  color: #FCFBCE;
+}
+
+.sign:active,button:active{
+  background-color: #FCFBCE;
+  color: #36317E;
+}
+
+.topnav{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.topnav a{
+    text-decoration: none;
+    color: #111;
+}
+.topnav a:hover {
+    color: #F7BBBB;
+}
+
+
+.main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.miniPro{
+  flex: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.about,#portfolio{
+  flex: 80%;
+  flex-direction: column;
+  display: flex;
+  padding: 30px;
+}
+
+#portfolio,.about{
+  border-radius: 10px;
+  /*  border:1px solid #F5F5FF;
+    box-shadow: 1px 10px 15px #F5F5FF;*/
+}
+
+button{
+  color: #36317E;
+  background-color: #F7BBBB;
+  width: 100px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom:  5px;
+  border-radius: 10px;
+  border: 1px solid #F7BBBB;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*************************************for page2********************************/
+.menu{
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+}
+
+.menu:hover{
+  color: #F7BBBB;
+}
+
+#container{
+  display: flex;
+}
+
+#mininav{
+  flex: 0.5;
+}
+
+#imageContainer{
+  flex: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+@media screen and (max-width:1200px) {
+  .main{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:990px) {
+  #imageContainer{
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width:750px) {
+  #imageContainer{
+      grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+.imageItem{
+/*  background-color:#F5F5FF;*/
+  width: 20vh;
+  height: 25vh;
+  text-align: center;
+  padding: 5px;
+}
+
+.imageItem div{
+  max-width: 100%;
+  height:17vh;
+  overflow:hidden;
+  margin-bottom: 10px;
+  box-shadow: 1px 5px 10px #F5F5FF;
+  border:1px solid #F5F5FF;
+}
+
+.imageItem div:hover{
+  box-shadow: 1px 5px 10px #F5F5FF;
+  border:1px solid #F5F5FF;
+}
+
+.imageItem img{
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+.imageItem span:hover{
+  display: block;
+}
+/*************************************for page2********************************/
+
+
+#img{
+  margin: 5px;
+  padding: 3px;
+}
+
+.donate{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+#imgDonate{
+    text-align: center;
+}
+#imgDonate img{
+    display: block;
+    margin: 10px;
+}
+
+.c{
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-bottom:  2px solid #F5F5FF;
+}
+
+.c img{
+  border:1px solid #F5F5FF;
+  box-shadow: 5px 8px #F5F5FF;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.ci1{
+  flex: 1;
+  text-align: center;
+}
+
+.ci2{
+  flex: 4;
+}
+
+#texta textarea{
+  width: 100%;
+  height: 80px;
+}
+
+.ci2 button{
+  float: right;
+  margin-bottom: 10px;
+}
+
+.picDonate{
+  flex: 50%;
+}
