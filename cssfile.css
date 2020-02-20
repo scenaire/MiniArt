@@ -5,13 +5,13 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'kanit', cursive;
 }
 
 body{
-  height: 1000px;
   background-color: #F4F5FA;
   margin: 0;
+  height: 1000px;
 }
 
 p {
@@ -22,8 +22,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-bottom:  10px;
-  padding-top: 10px;
+  padding-bottom:  20px;
+  padding-top: 20px;
   background-color: white;
   border-radius: 10px;
   padding-left: 30px;
@@ -43,6 +43,7 @@ p {
 
 .box2{
   display: flex;
+  align-items: baseline;
 }
 
 .box2 a{
@@ -80,16 +81,44 @@ p {
 }
 
 .topnav{
+  background-color: #000000;
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  padding: 10px;
 }
+
 .topnav a{
     text-decoration: none;
-    color: #111;
+    color: white;
 }
 .topnav a:hover {
-    color: #F7BBBB;
+    color:  #F4BA2F;
+}
+
+.secondnav {
+  background-color: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+  display: flex;
+  border: 2px solid #000000;
+  margin-bottom: 3%;
+}
+
+.secondnav a {
+  text-decoration: none;
+  color: black;
+  margin-right: 130px;
+}
+
+.secondnav a:hover {
+  color: #F4BA2F;;
+}
+
+.secondnav a:active {
+  color: #F4BA2F;
 }
 
 .painter_avatar {
@@ -101,18 +130,19 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
+  
 }
 .miniPro{
-  flex: 20%;
+  flex: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
   padding: 10px;
+  background-color: white;
 }
 
 .about,#portfolio{
-  flex: 80%;
+  flex: 85%;
   flex-direction: column;
   display: flex;
   padding: 30px;
@@ -125,18 +155,24 @@ p {
 }
 
 button{
-  color: #36317E;
-  background-color: #F7BBBB;
+  color: white;
+  background-color: black;
   width: 100px;
   padding: 10px;
   margin-top: 5px;
-  margin-bottom:  5px;
+  margin-bottom:  15px;
   border-radius: 10px;
-  border: 1px solid #F7BBBB;
+  border: 1px solid black;
   font-size: 15px;
   text-align: center;
   font-weight: bold;
 }
+
+#welcome {
+  float: left;
+  margin-right: 30px;
+}
+
 
 /*************************************for page2********************************/
 .menu{
@@ -177,7 +213,7 @@ button{
   }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:700px) {
   #imageContainer{
       grid-template-columns: 1fr 1fr;
   }
@@ -238,6 +274,7 @@ button{
 #imgDonate img{
     display: block;
     margin: 10px;
+    margin-left: 10%;
 }
 
 .c{
@@ -275,4 +312,62 @@ button{
 
 .picDonate{
   flex: 50%;
+}
+
+/*******************Search Box***********************/
+
+.underline {
+  background-color: dodgerblue;
+  display: inline-block;
+  height: 2px;
+  left: 50px;
+  margin-top: -4px;
+  position: absolute;
+  top: 185px;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  width: 15%;
+}
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #CCC;
+  color: #555;
+  box-sizing: border-box;
+  font-size: 18px;
+  height: 30px;
+  left: 30%;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.wrapper {
+  background-color: #FFF;
+  border-radius: 2px;
+  box-shadow: 0px 2px 1px 0px #DDD;
+  box-sizing: border-box;
+  height: 300px;
+  left: 50%;
+  margin: -150px 0 0 -150px;
+}
+#search{
+  margin-top: 5px;
+}
+
+.footer {
+  padding-bottom:  20px;
+  padding-top: 20px;
+  background-color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.footer p {
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
 }
