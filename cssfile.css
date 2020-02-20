@@ -1,3 +1,8 @@
+@font-face {
+  font-family: aqua_font;
+  src: url(fonts/aqua.ttf);
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Comfortaa', cursive;
@@ -5,19 +10,35 @@
 
 body{
   height: 1000px;
+  background-color: #F4F5FA;
+  margin: 0;
+}
+
+p {
+  color: #0D2825;
 }
 
 .logo {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-bottom: 1px solid black;
   padding-bottom:  10px;
+  padding-top: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .imglogo{
-  border-style: double;
-  background-color: #f1f1f1;
+  font-family: aqua_font;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+}
+
+.imglogo::first-letter {
+  color: #F4BA2F;
 }
 
 .box2{
@@ -25,30 +46,37 @@ body{
 }
 
 .box2 a{
+  font-family: 'Kanit', sans-serif;
   padding: 10px;
   border-radius: 5px;
   text-decoration: none;
+  color: #0D2825;
 }
 
-.login{
+#login{
   margin-right: 5px;
 }
 
-.login:hover{
-  text-decoration: underline;
+#login:hover{
+  color: #F4BA2F;
 }
-.login:active{
+
+#login:active{
   color: black;
 }
 
-.sign{
-  background-color: #36317E;
-  color: #FCFBCE;
+#sign{
+  background-color: black;
+  color: white;
 }
 
-.sign:active,button:active{
-  background-color: #FCFBCE;
-  color: #36317E;
+#sign:hover,button:hover {
+  background-color:  #F4BA2F;
+  color:  black;
+}
+
+#sign:active,button:active{
+  
 }
 
 .topnav{
@@ -62,6 +90,10 @@ body{
 }
 .topnav a:hover {
     color: #F7BBBB;
+}
+
+.painter_avatar {
+  border-radius: 50%;
 }
 
 
